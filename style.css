@@ -74,6 +74,6 @@ body {
 
 
 /* меняем фон при наведении мышки на кнопку */
-.modal .restart:hover {
+/*.modal .restart:hover {
   background: linear-gradient(#222, black);
 }
