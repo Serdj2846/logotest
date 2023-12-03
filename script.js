@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
   // Удаляем индикатор и меняем цвет на темно-зеленый после 2 секунд
   setTimeout(function() {
     clearInterval(rotationInterval);
-    loader.style.backgroundColor = "#006400"; // Темно-зеленый цвет
     loader.style.display = "none";
   }, 2000);
 });
