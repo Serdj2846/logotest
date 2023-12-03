@@ -59,9 +59,10 @@ body {
 
 /* настройки кнопки перезапуска игры */
 .modal .restart {
-  margin: 30px auto;
+  position: absolute;
+  top: 10px; /* расстояние сверху */
+  right: 10px; /* расстояние справа */
   padding: 20px 30px;
-  display: block;
   font-size: 30px;
   border: none;
   background: #4d4d4d;
@@ -72,6 +73,7 @@ body {
   text-shadow: 0px 1px 0 black;
   cursor: pointer;
 }
+
 
 /* меняем фон при наведении мышки на кнопку */
 .modal .restart:hover {
