@@ -36,12 +36,11 @@ body {
 
 /* Стили для модального окна */
 .modal {
-  position: fixed; /* изменено на fixed */
-  width: 90%;
-  height: 90%;
-  max-width: 800px;
-  max-height: 600px;
-  margin: 0 auto;
+  position: fixed;
+  width: 100%; /* Ширина 100% от размеров страницы браузера */
+  height: 100%; /* Высота 100% от размеров страницы браузера */
+  box-sizing: border-box; /* Включаем границы и отступы в размеры */
+  margin: 0;
   background: white;
   top: 50%;
   left: 50%;
@@ -49,6 +48,7 @@ body {
   padding: 0;
   overflow: hidden;
 }
+
 
 
 /* настройки кнопки перезапуска игры */
