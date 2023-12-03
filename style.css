@@ -29,18 +29,19 @@ body {
 
 /* настройки модального окна */
 .modal {
-  position: relative;
+  position: fixed;
   width: 500px;
   height: 300px;
   max-height: 90%;
   max-width: 90%;
   min-height: 380px;
-  margin: 0 auto;
-  background: white;
+  right: 50px; /* Располагаем окно вправо на 50px от края */
   top: 50%;
   transform: translateY(-50%);
+  background: white;
   padding: 30px 10px;
 }
+
 
 /* настройки шрифта сообщения о победе */
 .modal .winner {
