@@ -77,10 +77,12 @@ html, body {
   left: 50%;
   margin-top: -25px; /* Половина высоты индикатора */
   margin-left: -25px; /* Половина ширины индикатора */
-  z-index: 9999; /* Устанавливаем высокий z-index для обеспечения отображения поверх других элементов */
+  z-index: 9999;
 
+  /* Кадры для анимации вращения */
   @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
 }
-}
+
