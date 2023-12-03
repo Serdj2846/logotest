@@ -8,13 +8,6 @@ html, body {
   height: 100%;
 }
 
-/* ставим тёмный фон и растягиваем на всю высоту */
-body {
-  background: black;
-  min-height: 100%;
-  font-family: "Arial", sans-serif;
-}
-
 /* настройки затемнения при выводе модального окна */
 .modal-overlay {
   /* задаем изображение в качестве фона */
@@ -70,10 +63,4 @@ body {
   color: white;
   text-shadow: 0px 1px 0 black;
   cursor: pointer;
-}
-
-
-/* меняем фон при наведении мышки на кнопку */
-/*.modal .restart:hover {
-  background: linear-gradient(#222, black);
 }
