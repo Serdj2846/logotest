@@ -1,15 +1,20 @@
-// Получаем ссылку на модальное окно
 var modal = document.querySelector('.modal');
-
-// Получаем ссылку на кнопку
 var button = document.querySelector('.restart');
+var isModalExpanded = false;
 
-// Функция для изменения размеров модального окна
-function resizeModal() {
-  // Здесь вы можете устанавливать новые размеры для модального окна
-  modal.style.width = '100%';
-  modal.style.height = '100%';
+function toggleModalSize() {
+  if (isModalExpanded) {
+    // Если модальное окно увеличено, устанавливаем размеры 50%
+    modal.style.width = '50%';
+    modal.style.height = '50%';
+  } else {
+    // Если модальное окно уменьшено или в исходном состоянии, устанавливаем размеры 100%
+    modal.style.width = '100%';
+    modal.style.height = '100%';
+  }
+
+  // Инвертируем флаг состояния
+  isModalExpanded = !isModalExpanded;
 }
 
-// Обработчик события клика на кнопке
-button.addEventListener('click', resizeModal);
+button.addEventListener('click', toggleModalSize);
