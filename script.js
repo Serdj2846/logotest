@@ -224,4 +224,7 @@ var Memory = {
 		// возвращаем собранный код
 		return frag;
 	}
+
+	// запускаем игру
+	Memory.init(cards);
 };
