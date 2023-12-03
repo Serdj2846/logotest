@@ -65,20 +65,13 @@ html, body {
   cursor: pointer;
 }
 
-/* Стили для круглого индикатора загрузки */
 .loader {
-  border: 8px solid #f3f3f3;
-  border-top: 8px solid #3498db;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -25px; /* Половина высоты индикатора */
-  margin-left: -25px; /* Половина ширины индикатора */
+  transform: translate(-50%, -50%);
 }
+
 
 /* Анимация вращения */
 @keyframes spin {
