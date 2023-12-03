@@ -49,5 +49,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Скрываем индикатор после загрузки игры
     loader.style.display = "none";
+    console.log("Индикатор скрыт после загрузки игры.");
+  });
+
+  // Добавим еще один обработчик события, чтобы убедиться, что DOMContentLoaded срабатывает
+  iframe.contentWindow.addEventListener("DOMContentLoaded", function() {
+    console.log("Событие DOMContentLoaded сработало внутри iframe.");
+  });
+
+  // Добавим обработчик события load для iframe
+  iframe.addEventListener("load", function() {
+    console.log("Событие load сработало для iframe.");
   });
 });
+
