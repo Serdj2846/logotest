@@ -42,24 +42,19 @@ document.addEventListener("DOMContentLoaded", function() {
   // iframe для загрузки игры
   const iframe = document.querySelector("iframe");
 
-  // Обработчик события DOMContentLoaded для iframe
-  iframe.addEventListener("DOMContentLoaded", function() {
-    // Очищаем интервал после завершения вращения
-    clearInterval(rotationInterval);
+  // Ожидаем завершения загрузки iframe
+  const checkIframeLoaded = setInterval(function() {
+    if (iframe.contentDocument.readyState === "complete") {
+      // Очищаем интервал после завершения вращения
+      clearInterval(rotationInterval);
 
-    // Скрываем индикатор после загрузки игры
-    loader.style.display = "none";
-    console.log("Индикатор скрыт после загрузки игры.");
-  });
+      // Скрываем индикатор после загрузки игры
+      loader.style.display = "none";
+    }
+  }, 1000); // проверяем каждую секунду
 
-  // Добавим еще один обработчик события, чтобы убедиться, что DOMContentLoaded срабатывает
-  iframe.contentWindow.addEventListener("DOMContentLoaded", function() {
-    console.log("Событие DOMContentLoaded сработало внутри iframe.");
-  });
-
-  // Добавим обработчик события load для iframe
-  iframe.addEventListener("load", function() {
-    console.log("Событие load сработало для iframe.");
-  });
+  // Опционально: добавим таймер для остановки проверки через 10 секунд (измените по необходимости)
+  setTimeout(function() {
+    clearInterval(checkIframeLoaded);
+  }, 10000);
 });
-
