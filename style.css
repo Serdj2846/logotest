@@ -52,7 +52,7 @@ html, body {
   right: 0px;
   width: 60px; /* ваша фиксированная ширина */
   height: 60px; /* ваша фиксированная высота */
-  opacity: 1;
+  opacity: 0;
   background-image: url('full.png');
   background-size: cover;
   border: none;
