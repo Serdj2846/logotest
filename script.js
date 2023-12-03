@@ -42,16 +42,12 @@ document.addEventListener("DOMContentLoaded", function() {
   // iframe для загрузки игры
   const iframe = document.querySelector("iframe");
 
-  // Обработчик события load для iframe
-  iframe.addEventListener("load", function() {
+  // Обработчик события DOMContentLoaded для iframe
+  iframe.addEventListener("DOMContentLoaded", function() {
     // Очищаем интервал после завершения вращения
     clearInterval(rotationInterval);
 
-    // Проверяем, что контент в iframe загрузился
-    if (iframe.contentDocument.readyState === "complete") {
-      // Скрываем индикатор после загрузки игры
-      loader.style.display = "none";
-    }
+    // Скрываем индикатор после загрузки игры
+    loader.style.display = "none";
   });
 });
-
