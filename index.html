@@ -10,6 +10,17 @@
   <!-- подключаем свои стили -->
   <link rel="stylesheet" href="./style.css">
 
+  <style>
+    .controls {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .restart {
+      /* Если нужны какие-то стили для кнопки, вы можете добавить их здесь */
+    }
+  </style>
 </head>
 
 <body>
@@ -17,6 +28,11 @@
   <div class="wrap">
     <!-- блок с игрой -->
     <div class="game"></div>
+    <!-- контейнер для кнопки в правом верхнем углу -->
+    <div class="controls">
+      <!-- кнопка перезапуска игры -->
+      <button class="restart">Сыграем ещё?</button>
+    </div>
     <!-- модальное окно, которое появится после сбора всех пар -->
     <div class="modal-overlay">
       <div class="modal">
