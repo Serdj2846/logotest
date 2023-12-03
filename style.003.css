@@ -37,7 +37,6 @@ html, body {
   height: 50%;
   margin: 0 auto;
   background: white;
-  backgroundColor = "#006400"; // Темно-зеленый цвет
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -73,6 +72,7 @@ html, body {
   width: 50px;
   height: 50px;
   animation: spin 1s linear infinite;
+  backgroundColor = "#006400"; // Темно-зеленый цвет
   position: fixed;
   top: 50%;
   left: 50%;
