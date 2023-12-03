@@ -47,12 +47,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // Очищаем интервал после завершения вращения
     clearInterval(rotationInterval);
 
-    // Скрываем индикатор после загрузки игры
-    loader.style.opacity = 0; // Пример с использованием opacity
-    loader.style.transition = "opacity 0.5s"; // Пример с анимацией
-
-    // Другие варианты скрытия:
-    // loader.style.display = "none"; // Сразу скрыть, но не будет анимации
-    // loader.parentNode.removeChild(loader); // Удалить из DOM
+    // Проверяем, что контент в iframe загрузился
+    if (iframe.contentDocument.readyState === "complete") {
+      // Скрываем индикатор после загрузки игры
+      loader.style.display = "none";
+    }
   });
 });
+
