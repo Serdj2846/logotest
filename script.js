@@ -48,7 +48,11 @@ document.addEventListener("DOMContentLoaded", function() {
     clearInterval(rotationInterval);
 
     // Скрываем индикатор после загрузки игры
-    loader.style.display = "none";
+    loader.style.opacity = 0; // Пример с использованием opacity
+    loader.style.transition = "opacity 0.5s"; // Пример с анимацией
+
+    // Другие варианты скрытия:
+    // loader.style.display = "none"; // Сразу скрыть, но не будет анимации
+    // loader.parentNode.removeChild(loader); // Удалить из DOM
   });
 });
-
