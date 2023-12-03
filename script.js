@@ -27,11 +27,7 @@ button.addEventListener('click', toggleModalSize);
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  // Отображаем модальное окно
-  const modal = document.getElementById("modal");
-  modal.style.display = "flex";
-
-  // Вращаем индикатор в течение времени загрузки
+  // Вращаем индикатор в течение 2 секунд
   const loader = document.querySelector(".loader");
   let rotation = 0;
   const rotationInterval = setInterval(function() {
@@ -39,17 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
     loader.style.transform = `rotate(${rotation}deg)`;
   }, 100);
 
-  // iframe для загрузки игры
-  const iframe = document.querySelector("iframe");
-
-  // Обработчик события load для iframe
-  iframe.addEventListener("load", function() {
-    // Очищаем интервал после завершения вращения
+  // Удаляем индикатор и меняем цвет на темно-зеленый после 2 секунд
+  setTimeout(function() {
     clearInterval(rotationInterval);
-
-    // Скрываем индикатор после загрузки игры
-    setTimeout(function() {
-      loader.style.display = "none";
-    }, 0);
-  });
+    loader.style.backgroundColor = "#006400"; // Темно-зеленый цвет
+    loader.style.display = "none";
+  }, 2000);
 });
+
