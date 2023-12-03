@@ -42,19 +42,14 @@ document.addEventListener("DOMContentLoaded", function() {
   // iframe для загрузки игры
   const iframe = document.querySelector("iframe");
 
-  // Ожидаем завершения загрузки iframe
-  const checkIframeLoaded = setInterval(function() {
-    if (iframe.contentDocument.readyState === "complete") {
-      // Очищаем интервал после завершения вращения
-      clearInterval(rotationInterval);
+  // Обработчик события load для iframe
+  iframe.addEventListener("load", function() {
+    // Очищаем интервал после завершения вращения
+    clearInterval(rotationInterval);
 
-      // Скрываем индикатор после загрузки игры
+    // Скрываем индикатор после загрузки игры
+    setTimeout(function() {
       loader.style.display = "none";
-    }
-  }, 1000); // проверяем каждую секунду
-
-  // Опционально: добавим таймер для остановки проверки через 10 секунд (измените по необходимости)
-  setTimeout(function() {
-    clearInterval(checkIframeLoaded);
-  }, 10000);
+    }, 0);
+  });
 });
