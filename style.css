@@ -54,8 +54,11 @@ body {
 /* настройки кнопки перезапуска игры */
 .modal .restart {
   position: absolute;
-  top: 0px; /* расстояние сверху */
-  right: 0px; /* расстояние справа */
+  top: 0px;
+  right: 0px;
+  width: 100px; /* ваша фиксированная ширина */
+  height: 50px; /* ваша фиксированная высота */
+  /* остальные стили остаются без изменений */
   padding: 20px 30px;
   font-size: 30px;
   border: none;
