@@ -20,6 +20,7 @@ body {
   /* задаем изображение в качестве фона */
   background-image: url('background.jpg');
   /* располагаем окно по центру экрана и другие свойства... */
+  background-size: 100% 100%;
   position: fixed;
   top: 0;
   left: 0;
