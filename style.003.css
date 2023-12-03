@@ -37,6 +37,7 @@ html, body {
   height: 50%;
   margin: 0 auto;
   background: white;
+  backgroundColor = "#006400"; // Темно-зеленый цвет
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
