@@ -57,7 +57,7 @@ body {
   width: 60px; /* ваша фиксированная ширина */
   height: 60px; /* ваша фиксированная высота */
   opacity: 0.2;
-  background-image: url('путь_к_вашему_изображению.jpg');
+  background-image: url('button.png');
   background-size: cover;
   border: none;
   padding: 0; /* убираем внутренние отступы */
