@@ -225,6 +225,3 @@ var Memory = {
 		return frag;
 	}
 };
-
-// запускаем игру
-Memory.init(cards);
