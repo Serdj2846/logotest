@@ -14,7 +14,14 @@
 
   <!-- Подключение jQuery UI -->
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- добавляем вызов функции для запуска игры -->
+<script>
+  // объект «оживает» внутри файла script.js, вызываем его метод init
+  Memory.init(cards);
+</script>
 </head>
+
 <body>
   <!-- общий блок для всего -->
   <div class="wrap">
