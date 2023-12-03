@@ -66,10 +66,11 @@ html, body {
 }
 
 .loader {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 60px; /* ваша фиксированная ширина */
+  height: 60px; /* ваша фиксированная высота */
 }
 
 
