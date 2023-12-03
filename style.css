@@ -18,7 +18,7 @@ body {
 /* настройки затемнения при выводе модального окна */
 .modal-overlay {
   /* задаем изображение в качестве фона */
-  background-image: url('background.jpg');
+  background-image: url('Background.jpg');
   /* располагаем окно по центру экрана и другие свойства... */
   position: fixed;
   top: 0;
