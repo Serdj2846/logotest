@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="./style.css">
 
   <style>
+    .wrap {
+      position: relative;
+    }
+
     .controls {
       position: absolute;
       top: 10px;
@@ -26,13 +30,13 @@
 <body>
   <!-- общий блок для всего -->
   <div class="wrap">
-    <!-- блок с игрой -->
-    <div class="game"></div>
     <!-- контейнер для кнопки в правом верхнем углу -->
     <div class="controls">
       <!-- кнопка перезапуска игры -->
       <button class="restart">Сыграем ещё?</button>
     </div>
+    <!-- блок с игрой -->
+    <div class="game"></div>
     <!-- модальное окно, которое появится после сбора всех пар -->
     <div class="modal-overlay">
       <div class="modal">
