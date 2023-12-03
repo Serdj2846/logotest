@@ -67,12 +67,11 @@ html, body {
 
 .loader {
   border: 8px solid #f3f3f3;
-  border-top: 8px solid #3498db;
+  border-top: 8px solid #006400; /* Темно-зеленый цвет для внутренней области */
   border-radius: 50%;
   width: 50px;
   height: 50px;
   animation: spin 1s linear infinite;
-  background-color: #006400; /* Темно-зеленый цвет */
   position: fixed;
   top: 50%;
   left: 50%;
@@ -85,6 +84,7 @@ html, body {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
 
 
 
