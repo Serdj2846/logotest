@@ -224,7 +224,9 @@ var Memory = {
 		// возвращаем собранный код
 		return frag;
 	}
-
-	// запускаем игру
-	Memory.init(cards);
 };
+
+// добавляем вызов функции для запуска игры после загрузки страницы
+$(document).ready(function(){
+  Memory.init(cards);
+});
