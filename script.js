@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
   modal.style.display = "flex";
 
   // Вращаем индикатор в течение времени загрузки
-  const loader = document.getElementById("loader");
+  const loader = document.querySelector(".loader"); // Выбираем по классу
   let rotation = 0;
   const rotationInterval = setInterval(function() {
     rotation += 10;
