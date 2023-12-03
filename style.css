@@ -67,8 +67,8 @@ body {
 /* настройки кнопки перезапуска игры */
 .modal .restart {
   position: absolute;
-  top: 10px; /* расстояние сверху */
-  right: 10px; /* расстояние справа */
+  top: 0px; /* расстояние сверху */
+  right: 0px; /* расстояние справа */
   padding: 20px 30px;
   font-size: 30px;
   border: none;
