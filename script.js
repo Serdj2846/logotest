@@ -32,18 +32,23 @@ document.addEventListener("DOMContentLoaded", function() {
   modal.style.display = "flex";
 
   // Вращаем индикатор в течение времени загрузки
-  const loader = document.querySelector(".loader"); // Выбираем по классу
+  const loader = document.querySelector(".loader");
   let rotation = 0;
   const rotationInterval = setInterval(function() {
     rotation += 10;
     loader.style.transform = `rotate(${rotation}deg)`;
   }, 100);
 
-  // Здесь вы можете добавить код для выполнения дополнительных действий во время загрузки
+  // iframe для загрузки игры
+  const iframe = document.querySelector("iframe");
 
-  // После завершения загрузки приложения, скрываем модальное окно и очищаем интервал
-  setTimeout(function() {
-    modal.style.display = "none";
+  // Обработчик события load для iframe
+  iframe.addEventListener("load", function() {
+    // Очищаем интервал после завершения вращения
     clearInterval(rotationInterval);
-  }, 3000); // Пример: 3000 миллисекунд (3 секунды) - измените по необходимости
+
+    // Скрываем индикатор после загрузки игры
+    loader.style.display = "none";
+  });
 });
+
