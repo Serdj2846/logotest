@@ -24,3 +24,26 @@ function toggleModalSize() {
 }
 
 button.addEventListener('click', toggleModalSize);
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Отображаем модальное окно
+  const modal = document.getElementById("modal");
+  modal.style.display = "flex";
+
+  // Вращаем индикатор в течение времени загрузки
+  const loader = document.getElementById("loader");
+  let rotation = 0;
+  const rotationInterval = setInterval(function() {
+    rotation += 10;
+    loader.style.transform = `rotate(${rotation}deg)`;
+  }, 100);
+
+  // Здесь вы можете добавить код для выполнения дополнительных действий во время загрузки
+
+  // После завершения загрузки приложения, скрываем модальное окно и очищаем интервал
+  setTimeout(function() {
+    modal.style.display = "none";
+    clearInterval(rotationInterval);
+  }, 3000); // Пример: 3000 миллисекунд (3 секунды) - измените по необходимости
+});
