@@ -78,4 +78,9 @@ html, body {
   margin-top: -25px; /* Половина высоты индикатора */
   margin-left: -25px; /* Половина ширины индикатора */
   z-index: 9999; /* Устанавливаем высокий z-index для обеспечения отображения поверх других элементов */
+
+  @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 }
