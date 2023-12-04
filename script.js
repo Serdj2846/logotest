@@ -35,10 +35,9 @@ document.addEventListener("DOMContentLoaded", function() {
     loader.style.transform = `rotate(${rotation}deg)`;
   }, 100);
 
-  // Удаляем индикатор и меняем цвет на темно-зеленый после 2 секунд
+  // Удаляем индикатор после 2 секунд
   setTimeout(function() {
     clearInterval(rotationInterval);
     loader.style.display = "none";
   }, 2000);
 });
-
