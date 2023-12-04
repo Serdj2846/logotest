@@ -24,14 +24,16 @@ iframe {
 }
 
 button {
-  width: 100px; /* Ширина 100 пикселей */
-  height: 100px; /* Высота 100 пикселей */
+  width: 100px;
+  height: 100px;
   position: absolute;
   top: 0;
   right: 0;
-   background-color: red; 
+  background-color: #333;
   border: none;
   font-size: 16px;
-  cursor: pointer;
+  color: white; /* Цвет шрифта */
+  font-family: Arial, sans-serif; /* Шрифт (замените на желаемый) */
   z-index: 999;
 }
+
