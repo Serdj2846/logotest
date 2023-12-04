@@ -8,14 +8,14 @@ function toggleModalSize() {
     modal.style.width = '50%';
     modal.style.height = '50%';
 
-    button.style.width = '60px'; // Измените размеры по вашему усмотрению
+    button.style.width = '60px';
     button.style.height = '60px';
   } else {
     // Если модальное окно уменьшено или в исходном состоянии, устанавливаем размеры 100%
     modal.style.width = '100%';
     modal.style.height = '100%';
 
-    button.style.width = '120px'; // Измените размеры по вашему усмотрению
+    button.style.width = '120px';
     button.style.height = '120px';
   }
 
@@ -23,7 +23,14 @@ function toggleModalSize() {
   isModalExpanded = !isModalExpanded;
 }
 
-button.addEventListener('click', toggleModalSize);
+button.addEventListener('click', function() {
+  // Выполняем действие по перезапуску игры
+  // В данном случае просто логируем сообщение в консоль
+  console.log('Игра перезапущена');
+  // Вы можете добавить здесь логику перезапуска игры в соответствии с вашими требованиями
+  toggleModalSize();
+});
+
 
 
 document.addEventListener("DOMContentLoaded", function() {
