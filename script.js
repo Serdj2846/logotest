@@ -24,7 +24,6 @@ function toggleModalSize() {
 }
 
 button.addEventListener('click', toggleModalSize);
-});
 
 document.addEventListener("DOMContentLoaded", function() {
   // Вращаем индикатор в течение 2 секунд
