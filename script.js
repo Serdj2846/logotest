@@ -5,11 +5,19 @@ var isModalExpanded = false;
 function toggleModalSize() {
   if (isModalExpanded) {
     // Если модальное окно увеличено, устанавливаем размеры 50%
-    modal.style.width = '50%';
-    modal.style.height = '50%';
-    button.style.width = '60px';
-    button.style.height = '60px';
-    
+    // modal.style.width = '50%';
+    // modal.style.height = '50%';
+    // button.style.width = '60px';
+    // button.style.height = '60px';
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.mozCancelFullScreen) { // для Firefox
+      document.mozCancelFullScreen();
+    } else if (document.webkitExitFullscreen) { // для Chrome, Safari и Opera
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { // для Internet Explorer
+      document.msExitFullscreen();
+    }
   } else {
     // Если модальное окно уменьшено или в исходном состоянии, устанавливаем размеры 100%
     // modal.style.width = '100%';
