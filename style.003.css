@@ -1,20 +1,13 @@
 /* Стили для iframe вместо модального окна */
-.modal iframe {
-  position: fixed;
-  width: 50%;
-  height: 50%;
-  margin: 0 auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0;
-  overflow: hidden;
+.modal-iframe {
+  width: 100%;
+  height: 100%;
   border: none;
-  position: relative; /* Добавлено */
+  position: relative;
 }
 
 /* Используем стиль заднего фона из .modal-overlay */
-.modal iframe::before {
+.modal-iframe::before {
   content: ""; /* Добавлено пустое содержимое для псевдоэлемента */
   position: absolute;
   top: 0;
@@ -27,7 +20,7 @@
 }
 
 /* настройки кнопки перезапуска игры для iframe */
-.modal iframe .restart {
+.modal-iframe .restart {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -47,12 +40,12 @@
 }
 
 /* Скрытие кнопки перезапуска при загрузке */
-.modal iframe.loading .restart {
+.modal-iframe.loading .restart {
   display: none;
 }
 
 /* Стили для loader вместо модального окна */
-.modal iframe .loader {
+.modal-iframe .loader {
   border: 8px solid #f3f3f3;
   border-top: 8px solid #40E0D0;
   border-radius: 50%;
