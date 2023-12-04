@@ -5,9 +5,10 @@ body {
   height: 100vh;
   background: url('background.jpg');
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
 }
+
 
 iframe {
   width: 50vw; /* 50% ширины экрана */
