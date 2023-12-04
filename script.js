@@ -23,15 +23,8 @@ function toggleModalSize() {
   isModalExpanded = !isModalExpanded;
 }
 
-button.addEventListener('click', function() {
-  // Выполняем действие по перезапуску игры
-  // В данном случае просто логируем сообщение в консоль
-  console.log('Игра перезапущена');
-  // Вы можете добавить здесь логику перезапуска игры в соответствии с вашими требованиями
-  toggleModalSize();
+button.addEventListener('click', toggleModalSize);
 });
-
-
 
 document.addEventListener("DOMContentLoaded", function() {
   // Вращаем индикатор в течение 2 секунд
