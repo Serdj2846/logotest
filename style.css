@@ -21,3 +21,15 @@ iframe {
   border: none; /* Убираем рамку iframe */
 }
 
+button {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
