@@ -28,9 +28,7 @@ iframe {
 button {
   width: 100px;
   height: 100px;
-  position: fixed; /* изменено на fixed */
-  top: 0;
-  left: 0;
+  background-position: center;
   background-color: #333;
   border: none;
   font-size: 16px;
