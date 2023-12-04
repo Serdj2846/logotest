@@ -29,7 +29,6 @@ button {
   right: 0;
   background-color: #333;
   border: none;
-  font-size: 16px;
   cursor: pointer;
   z-index: 999;
 }
