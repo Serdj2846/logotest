@@ -11,29 +11,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <div class="loader"> </div>
-
-  <!-- общий блок для всего -->
-  <div class="wrap">
-    <!-- блок с игрой -->
-    <div class="game"></div>
-    <!-- модальное окно, которое появится после сбора всех пар -->
-    <div class="modal-overlay">
-      <div class="modal">
-        <!-- поздравительная надпись -->
-        <!-- <h2 class="winner">Победа!</h2> -->
-        <!-- iframe для загрузки игры -->
-        <iframe class="modal-iframe" src="https://serdj2846.github.io/Logo/" frameborder="0"></iframe>
-        <!-- кнопка перезапуска игры -->
-        <button class="restart"></button>
-      </div>
-    </div>
-  </div>
+<iframe class="modal-iframe" src="https://serdj2846.github.io/Logo/" frameborder="0">
+  <!-- Внутри iframe -->
+  <div class="loader"></div>
+  <button class="restart">Restart</button>
+</iframe>
 
   <!-- подключаем jQuery -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>  
   <script src='script.js'></script>
-</body>
-
 </html>
