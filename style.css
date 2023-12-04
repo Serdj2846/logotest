@@ -8,7 +8,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 500;
-  opacity = 0;
+  opacity: 0;
 }
 
 
@@ -23,7 +23,7 @@ iframe {
   transform: translate(-50%, -50%);
   border: none; /* Убираем рамку iframe */
   z-index: 500;
-  opacity = 0;
+  opacity: 0;
 }
 
 button {
