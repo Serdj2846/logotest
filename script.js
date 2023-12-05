@@ -25,7 +25,6 @@ function toggleModalSize() {
     } else if (document.msExitFullscreen) { // для Internet Explorer
       document.msExitFullscreen();
     }
-    }
   // Инвертируем флаг состояния
   isModalExpanded = !isModalExpanded;
 }
