@@ -17,13 +17,13 @@ function toggleModalSize() {
     //button.style.width = '120px';
     //button.style.height = '120px';
     if (document.exitFullscreen) {
-      document.exitFullscreen();
+      modal.exitFullscreen();
     } else if (document.mozCancelFullScreen) { // для Firefox
-      document.mozCancelFullScreen();
+      modal.mozCancelFullScreen();
     } else if (document.webkitExitFullscreen) { // для Chrome, Safari и Opera
-      document.webkitExitFullscreen();
+      modal.webkitExitFullscreen();
     } else if (document.msExitFullscreen) { // для Internet Explorer
-      document.msExitFullscreen();
+      modal.msExitFullscreen();
     }
     }
   // Инвертируем флаг состояния
