@@ -3,33 +3,35 @@ var button = document.querySelector('.restart');
 var isModalExpanded = false;
 
 function toggleModalSize() {
-  if (isModalExpanded) {
-    // Если модальное окно увеличено, устанавливаем размеры 50%
-    modal.style.width = '50%';
-    modal.style.height = '50%';
-    button.style.width = '60px';
-    button.style.height = '60px';
-    } 
-  else {
-    // Если модальное окно уменьшено или в исходном состоянии, устанавливаем размеры 100%
-    //modal.style.width = '100%';
-    //modal.style.height = '100%';
-    //button.style.width = '120px';
-    //button.style.height = '120px';
+  if (!isModalExpanded) {
+    // Если модальное окно не увеличено, запросите развертывание на весь экран
+    if (modal.requestFullscreen) {
+      modal.requestFullscreen();
+    } else if (modal.mozRequestFullScreen) { // для Firefox
+      modal.mozRequestFullScreen();
+    } else if (modal.webkitRequestFullscreen) { // для Chrome, Safari и Opera
+      modal.webkitRequestFullscreen();
+    } else if (modal.msRequestFullscreen) { // для Internet Explorer
+      modal.msRequestFullscreen();
+    }
+  } else {
+    // Если модальное окно увеличено, выходите из полноэкранного режима
     if (document.exitFullscreen) {
-      modal.exitFullscreen();
+      document.exitFullscreen();
     } else if (document.mozCancelFullScreen) { // для Firefox
-      modal.mozCancelFullScreen();
+      document.mozCancelFullScreen();
     } else if (document.webkitExitFullscreen) { // для Chrome, Safari и Opera
-      modal.webkitExitFullscreen();
+      document.webkitExitFullscreen();
     } else if (document.msExitFullscreen) { // для Internet Explorer
-      modal.msExitFullscreen();
+      document.msExitFullscreen();
     }
-    }
+  }
   // Инвертируем флаг состояния
   isModalExpanded = !isModalExpanded;
 }
+
 button.addEventListener('click', toggleModalSize);
+
 
 document.addEventListener("DOMContentLoaded", function() {
   // Вращаем индикатор в течение 2 секунд
