@@ -14,6 +14,8 @@ function toggleModalSize() {
     } else if (modal.msRequestFullscreen) { // для Internet Explorer
       modal.msRequestFullscreen();
     }
+    button.style.width = '120px';
+    button.style.height = '120px';
   } else {
     // Если модальное окно увеличено, выходите из полноэкранного режима
     if (document.exitFullscreen) {
@@ -25,6 +27,10 @@ function toggleModalSize() {
     } else if (document.msExitFullscreen) { // для Internet Explorer
       document.msExitFullscreen();
     }
+    modal.style.width = '50%';
+    modal.style.height = '50%';
+    button.style.width = '60px';
+    button.style.height = '60px';
   }
   // Инвертируем флаг состояния
   isModalExpanded = !isModalExpanded;
