@@ -7,8 +7,8 @@ function toggleModalSize() {
     // Если модальное окно не увеличено, запросите развертывание на весь экран
     modal.style.width = '100%';
     modal.style.height = '100%';
-    button.style.width = '120px';
-    button.style.height = '120px';
+    button.style.width = '60px';
+    button.style.height = '60px';
   } else {
     modal.style.width = '50%';
     modal.style.height = '50%';
