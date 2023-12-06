@@ -5,8 +5,8 @@ var isModalExpanded = false;
 function toggleModalSize() {
   if (!isModalExpanded) {
     // Если модальное окно не увеличено, запросите развертывание на весь экран
-    modal.style.width = '120%';
-    modal.style.height = '120%';
+    modal.style.width = '100%';
+    modal.style.height = '100%';
     button.style.width = '120px';
     button.style.height = '120px';
   } else {
