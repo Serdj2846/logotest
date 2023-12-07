@@ -11,7 +11,7 @@ body {
   height: 100vh;
   width: 100%;
   margin: 0;
-  background-color: #40E0D0; */
+  /* background-color: #40E0D0; */
   background-image: url('background.jpg');
   background-size: cover;
   background-position: center bottom;
