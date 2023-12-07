@@ -3,9 +3,14 @@
   box-sizing: border-box;
 }
 
-/* общие настройки страницы */
-html, body {
+body {
   height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url('your-image.jpg'); /* Замените 'your-image.jpg' на путь к вашему изображению */
+  background-size: auto 100%; /* Автоматическая ширина, 100% высоты */
+  background-repeat: no-repeat;
+  background-position: center bottom; /* Позиционируем изображение в центре внизу */
 }
 
 /* настройки затемнения при выводе модального окна */
