@@ -1,7 +1,7 @@
 /* для всех элементов ограничиваем их размеры размерами блока */
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 
 body {
   height: 100vh;
@@ -27,13 +27,13 @@ body {
   overflow: hidden;
 }
 
-game-container iframe {
+.game-container iframe {
   width: 100%;
   height: 100%;
   border: none; // убираем рамку iframe 
 }
 
-.modal .restart {
+.game-container .restart {
   position: absolute;
   top: 0px;
   right: 0px;
