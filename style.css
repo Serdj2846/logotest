@@ -4,14 +4,16 @@
 } */
 
 body {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   margin: 0;
   background-color: #40E0D0;
   background-image: url('background.jpg');
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
 }
+
 /* Стили для iframe внутри модального окна */
 /*
 .modal iframe {
