@@ -53,6 +53,11 @@ body {
   cursor: pointer;
 }
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 .loader {
   border: 8px solid #f3f3f3;
   border-top: 8px solid #40E0D0;
@@ -66,9 +71,4 @@ body {
   margin-top: -25px;
   margin-left: -25px;
   z-index: 9999;
-
-  @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
 }
