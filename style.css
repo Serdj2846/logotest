@@ -9,6 +9,7 @@ body {
   margin: 0;
   background-color: #40E0D0;
   background-image: url('background.jpg');
+  background-size: auto 100%;
 }
 /* Стили для iframe внутри модального окна */
 /*
