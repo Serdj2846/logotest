@@ -25,7 +25,6 @@ body {
   transform: translate(-50%, -50%);
   padding: 0;
   overflow: hidden;
-  transform: none;
 }
 
 .game-container iframe {
