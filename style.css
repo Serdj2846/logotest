@@ -37,13 +37,13 @@ body {
   position: absolute;
   top: 0px;
   right: 0px;
-  width: 60px; // ваша фиксированная ширина 
-  height: 60px; // ваша фиксированная высота 
+  width: 60px;
+  height: 60px;
   opacity: 1;
   background-image: url('full.png');
   background-size: cover;
   border: none;
-  padding: 0; // убираем внутренние отступы 
+  padding: 0;
   font-size: 30px;
   border: 1px solid #222;
   border-radius: 5px;
