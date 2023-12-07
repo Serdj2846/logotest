@@ -1,0 +1,91 @@
+/* для всех элементов ограничиваем их размеры размерами блока */
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: url('https://cojo.ru/wp-content/uploads/2022/12/detskii-fon-160.webp');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/* Стили для iframe внутри модального окна */
+/*
+.modal iframe {
+  width: 100%;
+  height: 100%;
+  border: none; // убираем рамку iframe 
+}
+*/
+
+/* Стили для модального окна */
+/*
+.modal {
+  position: fixed; // изменено на fixed 
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  overflow: hidden;
+}
+*/
+
+/* настройки кнопки перезапуска игры */
+/*
+.modal .restart {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 60px; // ваша фиксированная ширина 
+  height: 60px; // ваша фиксированная высота 
+  opacity: 1;
+  background-image: url('full.png');
+  background-size: cover;
+  border: none;
+  padding: 0; // убираем внутренние отступы 
+  font-size: 30px;
+  border: 1px solid #222;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 0px 1px 0 black;
+  cursor: pointer;
+}
+*/
+
+/* стили для loader'а */
+/*
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #40E0D0; // Берюзовый цвет для внутренней области 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -25px;
+  z-index: 9999;
+}
+*/
+
+/* @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+*/
+/*
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+*/
