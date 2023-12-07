@@ -40,12 +40,10 @@ body {
   width: 60px;
   height: 60px;
   opacity: 1;
-  background-image: url('full.png');
   background-size: cover;
-  border: none;
   padding: 0;
   font-size: 30px;
-  border: 0px solid #222;
+  border: 1px solid #222;
   border-radius: 5px;
   color: white;
   text-shadow: 0px 1px 0 black;
