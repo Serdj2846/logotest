@@ -33,7 +33,7 @@ body {
   border: none;
 }
 
-.game-container .restart {
+.game-container .full-screen {
   position: absolute;
   top: 0px;
   right: 0px;
