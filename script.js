@@ -1,24 +1,22 @@
-var modal = document.querySelector('.modal');
-var button = document.querySelector('.restart');
+var game = document.querySelector('.game-container');
+var button = document.querySelector('.full-screen');
 var isModalExpanded = false;
 
 function toggleModalSize() {
   if (!isModalExpanded) {
-    // Если модальное окно не увеличено, запросите развертывание на весь экран
-    modal.style.width = '100%';
-    modal.style.height = '100%';
+    game.style.width = '100%';
+    game.style.height = '100%';
     button.style.width = '60px';
     button.style.height = '60px';
   } else {
-    modal.style.width = '50%';
-    modal.style.height = '50%';
+    game.style.width = '50%';
+    game.style.height = '50%';
     button.style.width = '60px';
     button.style.height = '60px';
   }
   // Инвертируем флаг состояния
   isModalExpanded = !isModalExpanded;
 }
-
 button.addEventListener('click', toggleModalSize);
 
 
