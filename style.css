@@ -7,10 +7,10 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background-image: url('background.jpg'); /* Замените 'background.jpg' на путь к вашему изображению */
-  background-size: auto 100%; /* Автоматическая ширина, 100% высоты */
+  background-image: url('background.jpg');
+  background-size: auto 100%;
   background-repeat: no-repeat;
-  background-position: center bottom; /* Позиционируем изображение в центре внизу */
+  background-position: center bottom;
 }
 
 /* настройки затемнения при выводе модального окна */
