@@ -17,13 +17,6 @@ body {
   background-position: center bottom;
   background-repeat: no-repeat;
 }
-  
-.canvas {
-  width: 1000px;
-  height: 800px;
-  margin: 0;
-  background-color: rgb(200, 200, 200);
-}
 
 .game-container {
   position: fixed;
