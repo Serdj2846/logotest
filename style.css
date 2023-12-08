@@ -19,9 +19,9 @@ body {
 }
   
 .canvas {
-  height: 800vh;
-  width: 1000vh;
-  background-color: rgb(120, 120, 120);
+  width: 1000px;
+  height: 800px;
+  background-color: rgb(200, 200, 200);
 }
 
 .game-container {
