@@ -21,7 +21,6 @@ body {
 .canvas {
   height: 800vh;
   width: 1000vh;
-  margin: 0;
   background-color: rgb(120, 120, 120);
 }
 
